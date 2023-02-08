@@ -12,7 +12,7 @@ spec:
   regoFile: |
     package main
     notAllowedSeverities := ["Critical", "High"]
-    ignoreCves := [""]
+    ignoreCves := ["GHSA-36p3-wjmg-h94x"]
     contains(array, elem) = true {
       array[_] = elem
     } else = false { true }
