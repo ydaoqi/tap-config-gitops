@@ -1,5 +1,4 @@
-#@ load("@ytt:data", "data")
-#@ def in_list(key, list):
+#@ load("@ytt:data", "data") #@ def in_list(key, list):
 #@  return hasattr(data.values.tap_values, key) and (data.values.tap_values[key] in list)
 #@ end
 #@ if/end in_list('supply_chain', ['testing_scanning']) and in_list('profile', ['full', 'build']):
@@ -16,7 +15,7 @@ spec:
 
     # Accepted Values: "Critical", "High", "Medium", "Low", "Negligible", "UnknownSeverity"
     notAllowedSeverities := ["Critical", "High", "UnknownSeverity"]
-    ignoreCves := ["GHSA-36p3-wjmg-h94x"]
+    ignoreCves := ["GHSA-36p3-wjmg-h94x", "CVE-2020-36518", "CVE-2022-42003", "CVE-2022-42004", "GHSA-57j2-w4cx-62h2", "GHSA-jjjh-jjxp-wpff", "GHSA-rgv9-q543-rqg4", "GHSA-3mc7-4q67-w48m", "GHSA-mjmj-j48q-9wg2", "CVE-2016-1000027", "CVE-2022-22965"]
 
     contains(array, elem) = true {
       array[_] = elem

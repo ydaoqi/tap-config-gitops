@@ -16,4 +16,5 @@ data:
       language: java
       scanpolicy: snyk
     - name: tap-dev4
-      language: angular
+      language: java
+      #language: angular
