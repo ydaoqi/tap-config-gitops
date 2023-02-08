@@ -12,7 +12,7 @@ spec:
   regoFile: |
     package main
     notAllowedSeverities := ["Critical", "High"]
-    ignoreCves := ["GHSA-36p3-wjmg-h94x", "CVE-2020-36518", "CVE-2022-42003", "CVE-2022-42004", "GHSA-57j2-w4cx-62h2", "GHSA-jjjh-jjxp-wpff    ", "GHSA-rgv9-q543-rqg4", "GHSA-3mc7-4q67-w48m", "GHSA-mjmj-j48q-9wg2", "CVE-2016-1000027", "CVE-2022-22965"]
+    ignoreCves := ["GHSA-36p3-wjmg-h94x", "CVE-2020-36518", "CVE-2022-42003", "CVE-2022-42004", "GHSA-57j2-w4cx-62h2", "GHSA-jjjh-jjxp-pff", "GHSA-rgv9-q543-rqg4", "GHSA-3mc7-4q67-w48m", "GHSA-mjmj-j48q-9wg2", "CVE-2016-1000027", "CVE-2022-22965"]
     contains(array, elem) = true {
       array[_] = elem
     } else = false { true }
